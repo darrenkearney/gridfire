@@ -6,4 +6,4 @@ class Cell ():
             setattr(self, key, value)
 
     def __str__():
-        return "Cell, coords: {}, visited: {}".format( coords, visited )
+        return "Cell, coord: {}, visited: {}".format( coord, visited )

@@ -8,7 +8,6 @@ level = []
 
 # Basic level with array of indexs at each index of the list representing coordinates
 for y in range(3):
-
     levelx = []
     for x in range(3):
         levelx.append([x, y])
