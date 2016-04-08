@@ -1,38 +1,28 @@
 import random
-
+from cell import Cell
 # todo
 # choice stack
 # random path through level
 
-# class Cell ():
-#     __init__(self, *kwargs):
-#         #stuff
-#         # set coords
-#         # set visited
-#         self.coords = kwargs.coords
-#         self.visited = kwargs.visited
-
-#     __str__():
-#         return "Cell, coords: {}, visited: {}".format( coords, visited )
-
-
-
 level = []
 
+# Basic level with array of indexs at each index of the list representing coordinates
 for y in range(3):
 
     levelx = []
-    
     for x in range(3):
-
-        cell = {}
-        cell['coords'] = [x, y]
-        cell['visited'] = 'false'
-        #cell = [x,y]
-        levelx.append(cell)
-        
-    
+        levelx.append([x, y])
     level.append( levelx )
     print(level[y])
 
+#print("cell list is: {}".format(cell_x_list))
+#print("first cell is {}".format(level[0][0]))
 
+# for y in level:
+#     print('y = {}'.format(y))
+#     print('level[y] = {}'.format(level[y]))
+
+    #cell_list=[Cell( coord=[x, y], visited="true") for x,y in level ]
+    #for cell in cell_list:
+    #   levelx.append(cell)
+    #cell_list[0].coord
