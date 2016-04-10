@@ -1,5 +1,5 @@
 class Cell ():
-"""A Cell that contains cell specific data"""
+    """A Cell that contains cell specific data."""
 
     def __init__(self, **kwargs):
         self.x = kwargs.get( 'x', 0 )
