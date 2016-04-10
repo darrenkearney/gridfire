@@ -18,10 +18,10 @@ for y in range(3):
     #print(grid[y])
 
 # DEBUG
-print( 'The grid')
-print( grid )
-print( 'Cell 0,0' )
-print( grid[0][0] )
-print( "grid Cell x: {}".format(grid[0][0].x))
-print( "grid Cell y: {}".format(grid[0][0].y))
-print( "grid[0][0].coord = {}".format(grid[0][0].coord) )
+# print( 'The grid')
+# print( grid )
+# print( 'Cell 0,0' )
+# print( grid[0][0] )
+# print( "grid Cell x: {}".format(grid[0][0].x))
+# print( "grid Cell y: {}".format(grid[0][0].y))
+# print( "grid[0][0].coord = {}".format(grid[0][0].coord) )

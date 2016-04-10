@@ -1,4 +1,6 @@
 class Cell ():
+"""A Cell that contains cell specific data"""
+
     def __init__(self, **kwargs):
         self.x = kwargs.get( 'x', 0 )
         self.y = kwargs.get( 'y', 0 )
