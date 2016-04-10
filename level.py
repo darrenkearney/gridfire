@@ -2,60 +2,26 @@ import random
 from cell import Cell
 # todo
 # choice stack
-# random path through level
+# random path through grid
 
-level = []
 
-# Basic level with array of indexs at each index of the list representing coordinates
+# 2 dimensional array of indexs
+# Inner and outer arrays represent x-axis and y-axis respectively
+# At each x index is an instance of Cell
+grid = []
 for y in range(3):
-    levelx = []
+    grid_x = []
     for x in range(3):
-        levelx.append([x, y])
-    level.append( levelx )
-    print(level[y])
+        cell = Cell(x=x, y=y)
+        grid_x.append(cell)
+    grid.append( grid_x )
+    #print(grid[y])
 
-#print("cell list is: {}".format(cell_x_list))
-#print("first cell is {}".format(level[0][0]))
-
-# for y in level:
-#     print('y = {}'.format(y))
-#     print('level[y] = {}'.format(level[y]))
-
-    #cell_list=[Cell( coord=[x, y], visited="true") for x,y in level ]
-    #for cell in cell_list:
-    #   levelx.append(cell)
-    #cell_list[0].coord
-
-print(level[1][1]   )
-print('This is the cell coordinates from the cell at 1,1')
-print("Level Cell: {}".format(level[1][1]))
-
-
-
-# micheal tip 
-# for index, item in enumerate([3,4,5]):
-
-outer_array = []
-for y in range(3):
-     #print(y)
-     #print(outer_array)
-     inner_array = []
-     for x in range(3):
-             #print(x)
-             #print(inner_array)
-             cell = Cell(x=x, y=y)
-             #obj = {'coord': [x, y]}
-             #inner_array.append([]) #append empty array, this will be how we select the object
-             inner_array.append(cell)
-     outer_array.append(inner_array)
-     print(outer_array)
-
-print('Cell 0,0')
-print( outer_array[0][1].x )
-
-print( "Cell['coord'] = {}".format(outer_array[0][0].coord) )
-# test =  outer_array[0][0] 
-# for _ in test:
-#     item.coord
-# print('This is the cell coordinates from the cell at 1,1')
-# print("Cell: {}".format(outer_array[1][1]))
+# DEBUG
+print( 'The grid')
+print( grid )
+print( 'Cell 0,0' )
+print( grid[0][0] )
+print( "grid Cell x: {}".format(grid[0][0].x))
+print( "grid Cell y: {}".format(grid[0][0].y))
+print( "grid[0][0].coord = {}".format(grid[0][0].coord) )
